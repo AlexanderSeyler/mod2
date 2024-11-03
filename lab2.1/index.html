@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Website Title</title>
+    <meta charset="UTF-8" />
+    <meta
+      name="description"
+      content="This is a brief description of the website."
+    />
+    <meta
+      name="keywords"
+      content="web design, HTML, CSS, JavaScript, development"
+    />
+    <meta name="author" content="Your Name" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/mod2/lab2.1/index.html">Home</a>
+        <a href="/mod2/lab2.1/form.html">Form</a>
+      </nav>
+    </header>
+
+    <h1>My HTML Learning Journey</h1>
+
+    <article>
+      <h2>Learning elements - div, span, p, pre, ul, li, ol, article</h2>
+      <!-- Content from previous steps -->
+    </article>
+
+    <article>
+      <h2>Understanding Tables in HTML</h2>
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">First and Second Header</th>
+            <th>Third Header</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>First cell - first row</td>
+            <td>Second cell - first row</td>
+            <td>Third cell - first row</td>
+          </tr>
+          <tr>
+            <td rowspan="2">First cell - second row (spanning 2 rows)</td>
+            <td>Second cell - second row</td>
+            <td>Third cell - second row</td>
+          </tr>
+          <tr>
+            <td>Second cell - third row</td>
+            <td>Third cell - third row</td>
+          </tr>
+        </tbody>
+      </table>
+    </article>
+
+    <article>
+      <h2>Multimedia Elements - Images, Video, and Audio</h2>
+
+      <!-- Image 1 -->
+      <img
+        src="https://picsum.photos/400/400"
+        alt="Sample image from Picsum"
+        width="400"
+        height="400"
+      />
+
+      <!-- Image 2 -->
+      <img
+        src="assets/html_lab_image.jpg"
+        alt="Local sample image"
+        width="400"
+        height="400"
+      />
+
+      <!-- Video -->
+      <video controls width="400">
+        <source src="assets/flower.webm" type="video/webm" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+
+      <!-- Audio with caption -->
+      <figure>
+        <audio controls src="assets/t-rex-roar.mp3">
+          Your browser does not support the <code>audio</code> element.
+        </audio>
+        <figcaption>Listen to a T-Rex roar sound.</figcaption>
+      </figure>
+
+      <!-- Autoplay attributes -->
+      <video autoplay width="400">
+        <source src="assets/flower.webm" type="video/webm" />
+        Sorry, your browser doesn't support embedded videos.
+      </video>
+
+      <audio autoplay src="assets/t-rex-roar.mp3">
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+    </article>
+
+    <footer>Copyright &copy; 2024</footer>
+  </body>
+</html>

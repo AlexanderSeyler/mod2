@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Example</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="/mod2/lab2.1/index.html">Home</a>
+        <a href="/mod2/lab2.1/form.html">Form</a>
+      </nav>
+    </header>
+
+    <h1>User Information Form</h1>
+
+    <form method="POST" action="http://127.0.0.1:5500/form.html">
+      <!-- First Name Input -->
+      <div>
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+      </div>
+
+      <!-- Last Name Input -->
+      <div>
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+      </div>
+
+      <!-- Radio Buttons for Favorite Coding Language -->
+      <div>
+        <p>Select your favorite coding language:</p>
+        <div>
+          <input
+            type="radio"
+            id="language-html"
+            name="coding-language"
+            value="HTML"
+            required
+          />
+          <label for="language-html">HTML</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="language-css"
+            name="coding-language"
+            value="CSS"
+          />
+          <label for="language-css">CSS</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            id="language-js"
+            name="coding-language"
+            value="JavaScript"
+          />
+          <label for="language-js">JavaScript</label>
+        </div>
+      </div>
+
+      <!-- Checkboxes for Vehicle Types -->
+      <div>
+        <p>Select the types of vehicles you own:</p>
+        <div>
+          <input type="checkbox" id="vehicle-car" name="vehicle" value="Car" />
+          <label for="vehicle-car">Car</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="vehicle-bike"
+            name="vehicle"
+            value="Bike"
+          />
+          <label for="vehicle-bike">Bike</label>
+        </div>
+        <div>
+          <input
+            type="checkbox"
+            id="vehicle-truck"
+            name="vehicle"
+            value="Truck"
+          />
+          <label for="vehicle-truck">Truck</label>
+        </div>
+      </div>
+
+      <!-- Dropdown for Car Brand -->
+      <div>
+        <label for="car-brand">Choose your car brand:</label>
+        <select id="car-brand" name="car-brand" required>
+          <option value="Toyota">Toyota</option>
+          <option value="Ford">Ford</option>
+          <option value="Honda">Honda</option>
+          <option value="BMW">BMW</option>
+        </select>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit form</button>
+    </form>
+  </body>
+</html>

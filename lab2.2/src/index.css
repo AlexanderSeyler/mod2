@@ -1,0 +1,128 @@
+/* I. Selectors */
+/* Type selector */
+article {
+  margin: 20px 0;
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.style-me1 {
+  color: red;
+}
+
+#style-me2 {
+  color: blue;
+}
+
+.style-me1#style-me2 {
+  color: purple;
+}
+
+.my-descendants-are-styled p {
+  background-color: red;
+}
+
+.my-children-are-styled > p {
+  background-color: lightgreen;
+}
+
+/* II. Box model and common properties */
+.box {
+  background-color: lightblue;
+  margin: 10px 20px 30px 40px;
+  padding: 5px 10px;
+  padding: 2em;
+
+  width: 300px;
+  height: 200px;
+
+  border: 10px solid black;
+  border-radius: 20px;
+
+  box-sizing: border-box;
+
+  overflow: hidden;
+
+  outline: 10px solid purple;
+
+  background-image: url("./assets/images/img1.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* III. Positioning */
+.position-absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.position-relative {
+  position: relative;
+}
+
+.position-sticky {
+  position: sticky;
+  top: 10px;
+}
+
+/* IV. Styling text */
+.text-style {
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+/* V. Styling links */
+/* Resetting default styles */
+a,
+a:link {
+  color: #0011ff;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #7c36ff;
+  font-style: italic;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #124e8d;
+  text-decoration: underline;
+}
+
+/* VI. calc() */
+.calc-style {
+  width: 100vw;
+  background-color: lightblue;
+}
+
+.calc-style {
+  width: calc(100vw - 100px);
+}
+
+.fixed-width-col {
+  width: 350px;
+  display: inline-block;
+  background-color: lightcoral;
+}
+
+/* Fluid column */
+.fluid-col {
+  display: inline-block;
+  width: calc(100vw - 350px);
+  background-color: lightgreen; /* Optional: Add background color for visibility */
+}
